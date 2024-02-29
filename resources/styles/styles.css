@@ -1,0 +1,56 @@
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav {
+    margin-right: 20px;
+}
+header nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.logo{
+    width: 200px;
+}
+
+table td{
+    padding:25px ;
+}
+
+table tr{
+    margin-bottom: 15px;
+}
+
+.headshot{
+    width: 250px;
+
+}
+
+h1{
+    color: #3858ff;
+}
+
+.content {
+    display: flex;
+}
+
+.content .sidebar {
+    padding: 30px 70px;
+    max-width: 500px;
+    background-color: #c4d7ff;
+}
+
+.content .displayContent {
+    padding: 25px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    margin: 20px;
+}

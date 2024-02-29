@@ -1,0 +1,22 @@
+[
+  {
+    "title" : "Cyber Project",
+    "date" : "Fall 2023",
+    "description" : "Used command line to be able to find out the password of the anonymous user",
+    "mediaLink" : "resources/images/TAKE%20HOME%20(in-class)-1.png"
+  },
+
+  {
+    "title" : "SQL Project",
+    "date" : "Fall 2022",
+    "description" : "Developed a whole database for a company, and added the addresses, names, phone number, and more for each employee",
+    "mediaLink" : "resources/images/Project%20SQL.png"
+  },
+
+  {
+    "title" : "JAVA project",
+    "date" : "Spring 2023",
+    "description" : "Developed a password checker on java",
+    "mediaLink" : "resources/images/PasswordChecker-1.png"
+  }
+]

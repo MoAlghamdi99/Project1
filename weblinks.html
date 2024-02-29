@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohammed Alghamdi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/resources/styles/styles.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="resources/images/logo.png" alt="logo" class="logo">
+    </a>
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="education.html"> Education</a> </li>
+            <li class="nav-item"><a class="nav-link active" href="experience.html"> Experience</a> </li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html"> Gallery</a> </li>
+            <li class="nav-item"><a class="nav-link active" href="resume.html"> Resume</a> </li>
+            <li class="nav-item"><a class="nav-link active" href="weblinks.html"> Weblinks</a> </li>
+        </ul>
+    </nav>
+</header>
+<br>
+
+<div class="content">
+    <div class="sidebar">
+        <br>
+        <h2>Contact me</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xnqevzlb" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="sample@email.com" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+
+        <div id="apiDisplay"></div>
+        <script>
+            const div = document.getElementById('apiDisplay');
+            const url = 'https://icanhazdadjoke.com/';
+
+            const headers = new Headers({
+                'Accept' : 'application/json'
+            });
+
+            fetch(url, {headers})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    let p = document.createElement('p');
+                    p.innerHTML =`${data.joke}`;
+                    div.appendChild(p);
+                })
+                .catch(function (error){
+                    console.log(error);
+                });
+        </script>
+    </div>
+    <div class="displayContent">
+        <h1>Favorite Web Resources</h1>
+        <br>
+        <div class="resource">
+            <h2>YouTube</h2>
+            <p>YouTube is a video-sharing platform where users can upload, share, and view videos on a wide range of topics. It has become a popular source of entertainment, education, and information.</p>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            <br><br>
+            <h2>Google</h2>
+            <p>Google is a multinational technology company known for its search engine, which provides access to a vast amount of information available on the web. In addition to search, Google offers various services including email, maps, and cloud storage.</p>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <br><br>
+            <h2>Twitter</h2>
+            <p>Twitter is a social media platform where users can post and interact with short messages known as "tweets". It is widely used for sharing news, opinions, and updates on various topics in real-time.</p>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <a href="https://www.linkedin.com/in/mohammed-alghamdi-80b5772b0/"> Linkedin</a>
+    <a href="https://github.com/MoAlghamdi99"> GitHub</a>
+    <p> Mohammed Alghmaid <br> 125 W College Ave, State College <br> (347) 782-3474 <br> mohammedalghamdi@gmail.com</p>
+    <p> &copy; Copyright 2024</p>
+</footer>
+</body>
+</html>
